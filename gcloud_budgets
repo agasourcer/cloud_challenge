@@ -1,0 +1,42 @@
+#I've already created one budget with ,,samoouczek" in Google Cloud Platform, not in Google Shell, that's why I have 2 budgets
+
+
+a_rachwalak@cloudshell:~ (kinetic-anvil-400904)$ gcloud billing budgets create --billing-account=017B9C-E8488F-916B81 --display-name="SecondBudget" --budget-amount=100PLN --threshold-rule=percent=0.50 --threshold-rule=percent=0.9,basis=forecasted-spend
+Created [7726df0d-aa10-4035-bbc1-035a0fd2622d].
+a_rachwalak@cloudshell:~ (kinetic-anvil-400904)$ gcloud billing budgets list --billing-account=017B9C-E8488F-916B81 
+---
+amount:
+  specifiedAmount:
+    currencyCode: PLN
+    units: '100'
+budgetFilter:
+  calendarPeriod: MONTH
+  creditTypesTreatment: INCLUDE_ALL_CREDITS
+displayName: SecondBudget
+etag: '1696835029253983'
+name: billingAccounts/017B9C-E8488F-916B81/budgets/7726df0d-aa10-4035-bbc1-035a0fd2622d
+notificationsRule: {}
+thresholdRules:
+- spendBasis: CURRENT_SPEND
+  thresholdPercent: 0.5
+- spendBasis: FORECASTED_SPEND
+  thresholdPercent: 0.9
+---
+amount:
+  specifiedAmount:
+    currencyCode: PLN
+    units: '400'
+budgetFilter:
+  calendarPeriod: QUARTER
+  creditTypesTreatment: INCLUDE_ALL_CREDITS
+displayName: TestBudget
+etag: '1696833945489343'
+name: billingAccounts/017B9C-E8488F-916B81/budgets/dbc3d9db-f328-44f6-a7a7-462923bdfeef
+notificationsRule: {}
+thresholdRules:
+- spendBasis: CURRENT_SPEND
+  thresholdPercent: 0.5
+- spendBasis: CURRENT_SPEND
+  thresholdPercent: 0.72
+- spendBasis: CURRENT_SPEND
+  thresholdPercent: 1.0
