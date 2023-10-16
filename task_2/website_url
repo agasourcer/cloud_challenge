@@ -1,1 +1,3 @@
 https://storage.googleapis.com/bucket32456/index.html
+
+gsutil defacl set public-read gs://another_bucket345
