@@ -1,0 +1,8 @@
+|id |lastname |firstname|email                |city   |age|
+|---|---------|---------|---------------------|-------|---|
+|1  |Martyna  |Lewinska |myemail2@gmail.com   |Lodnon |33 |
+|2  |Anna     |Kowalska |myemail1@gmail.com   |Cracow |34 |
+|3  |Katarzyna|Nowak    |myrfdemail@gmail.com |Rzeszow|56 |
+|4  |Marta    |Popowska |myemaifgdfl@gmail.com|Warsaw |34 |
+|5  |Marta    |Krakowska|my234email@gmail.com |Paris  |23 |
+|0  |Agnieszka|Rachwalak|myemail@gmail.com    |London |30 |
