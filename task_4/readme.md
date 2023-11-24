@@ -1,0 +1,1 @@
+Created Virtual Machine and host a static website there
